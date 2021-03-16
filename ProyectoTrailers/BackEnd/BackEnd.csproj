@@ -126,10 +126,10 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="HTML\Dashboard.html" />
-    <Content Include="HTML\Grafico.html" />
     <Content Include="HTML\Index.html" />
     <Content Include="HTML\Login.html" />
     <Content Include="HTML\Registro.html" />
+    <Content Include="HTML\Reportes.html" />
     <Content Include="Imagenes\login.png" />
     <Content Include="Imagenes\oficial.jpeg" />
     <Content Include="Imagenes\trailer.jpg" />
@@ -218,6 +218,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
