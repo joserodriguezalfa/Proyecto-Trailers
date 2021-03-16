@@ -1,20 +1,103 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         body {
-            background-image: url('Images/oficial.jpeg');
-            background-position: top;
+            background-image: linear-gradient(black, black, red);
             height: 720px;
             background-repeat: no-repeat;
-            background-color: #ffffff;
+            background-position: center;
+            background-color: #cccccc;
+
+        }
+
+        .container {
+            border: 2px outset white;
+            background-color: black;
+            text-align: center;
+        }
+
+        .jumbotron {
+            background-image: url('../Imagenes/oficial.jpeg');
+            text-align: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+            height: 200px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            bottom: -10%;
+            width: 100%;
+        }
+
+            .navbar a {
+                float: none;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .navbar a:hover {
+                    background: red;
+                    color: black;
+                }
+
+                .navbar a.active {
+                    background-color: black;
+                    color: white;
+                }
+
+        .main {
+            padding: 16px;
+            margin-bottom: 30px;
         }
     </style>
-
 </head>
 <body>
+    
+    <div id="piechart"></div>
+    <div class="char"></div>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Rutas', 'Hours per Day'],
+                ['Reparaciones', 8],
+                ['Viajes', 2],
+                ['Lo que sea', 4],
+                ['Perdidas', 2],
+                ['Ganancias', 8]
+            ]);
+
+
+            // Optional; add a title and set the width and height of the chart
+            var options = { 'title': 'Grafico demostrativo', 'width': 550, 'height': 400 };
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    </script>
 
     <div id="piechart"></div>
     <div class="char"></div>
@@ -46,6 +129,11 @@
             chart.draw(data, options);
         }
     </script>
+
+    <div class="jumbotron text-center">
+
+    </div>
+
 
 </body>
 </html>
