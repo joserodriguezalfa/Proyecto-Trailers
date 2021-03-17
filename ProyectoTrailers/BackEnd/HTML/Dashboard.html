@@ -83,6 +83,11 @@
                 height: auto;
             }
         }
+        .w3-container{
+            position: right;
+           
+
+        }
     </style>
 </head>
 <body>
@@ -96,6 +101,7 @@
                     <li><a href="Reportes.html">Clientes</a></li>
                     <li><a href="#section3">Rutas</a></li>
                     <li><a href="#section3">Estadisticas</a></li>
+                    <li><a href="Reportes.html">Reportes</a></li>
                 </ul><br>
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Buscar...">
@@ -137,6 +143,38 @@
                 </form>
                 <br><br>
 
+                <div id="piechart"></div>
+                <div class="w3-container">
+
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+                    <script type="text/javascript">
+                        // Load google charts
+                        google.charts.load('current', { 'packages': ['corechart'] });
+                        google.charts.setOnLoadCallback(drawChart);
+
+                        // Draw the chart and set the chart values
+                        function drawChart() {
+                            var data = google.visualization.arrayToDataTable([
+                                ['Rutas', 'Hours per Day'],
+                                ['Reparaciones', 8],
+                                ['Viajes', 2],
+                                ['Lo que sea', 4],
+                                ['Perdidas', 2],
+                                ['Ganancias', 8]
+                            ]);
+
+                            // Optional; add a title and set the width and height of the chart
+                            var options = { 'title': 'Viajes', 'width': 500, 'height': 400 };
+
+                            // Display the chart inside the <div> element with id="piechart"
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                            chart.draw(data, options);
+                        }
+                    </script>
+
+                </div>
+
                 <p><span class="badge">2</span> Comments:</p><br>
 
                 <div class="row">
@@ -164,72 +202,16 @@
                                 <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
                                 <p>Me too! WOW!</p>
                                 <br>
-
-                                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-                                <script type="text/javascript">
-                                    // Load google charts
-                                    google.charts.load('current', { 'packages': ['corechart'] });
-                                    google.charts.setOnLoadCallback(drawChart);
-
-                                    // Draw the chart and set the chart values
-                                    function drawChart() {
-                                        var data = google.visualization.arrayToDataTable([
-                                            ['Rutas', 'Hours per Day'],
-                                            ['Reparaciones', 8],
-                                            ['Viajes', 2],
-                                            ['Lo que sea', 4],
-                                            ['Perdidas', 2],
-                                            ['Ganancias', 8]
-                                        ]);
-
-
-                                        // Optional; add a title and set the width and height of the chart
-                                        var options = { 'title': 'Grafico demostrativo', 'width': 550, 'height': 400 };
-
-                                        // Display the chart inside the <div> element with id="piechart"
-                                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                                        chart.draw(data, options);
-                                    }
-                                </script>
-
-                                <div id="piechart"></div>
-                                <div class="char"></div>
-
-                                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-                                <script type="text/javascript">
-                                    // Load google charts
-                                    google.charts.load('current', { 'packages': ['corechart'] });
-                                    google.charts.setOnLoadCallback(drawChart);
-
-                                    // Draw the chart and set the chart values
-                                    function drawChart() {
-                                        var data = google.visualization.arrayToDataTable([
-                                            ['Rutas', 'Hours per Day'],
-                                            ['Reparaciones', 8],
-                                            ['Viajes', 2],
-                                            ['Lo que sea', 4],
-                                            ['Perdidas', 2],
-                                            ['Ganancias', 8]
-                                        ]);
-
-
-                                        // Optional; add a title and set the width and height of the chart
-                                        var options = { 'title': 'Grafico demostrativo', 'width': 500, 'height': 400 };
-
-                                        // Display the chart inside the <div> element with id="piechart"
-                                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                                        chart.draw(data, options);
-                                    }
-                                </script>
-
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+
+
         </div>
     </div>
 

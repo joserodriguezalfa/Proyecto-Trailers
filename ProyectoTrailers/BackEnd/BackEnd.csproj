@@ -51,6 +51,24 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -111,9 +129,14 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\custom-style.css" />
+    <Content Include="css\loaders.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -124,16 +147,56 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="font-awesome\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="HTML\Dashboard.html" />
+    <Content Include="HTML\Form_Emple.html" />
     <Content Include="HTML\Index.html" />
+    <Content Include="HTML\Dashboard1.html" />
     <Content Include="HTML\Login.html" />
     <Content Include="HTML\Registro.html" />
+    <Content Include="HTML\Reparaciones.html" />
     <Content Include="HTML\Reportes.html" />
+    <Content Include="HTML\Rutas.html" />
+    <Content Include="Imagenes\game.jpg" />
     <Content Include="Imagenes\login.png" />
     <Content Include="Imagenes\oficial.jpeg" />
+    <Content Include="Imagenes\trailer-truck.jpg" />
     <Content Include="Imagenes\trailer.jpg" />
     <Content Include="Imagenes\trailer2.jpg" />
+    <Content Include="Imagenes\truck.jpg" />
+    <Content Include="img\icons\brush.png" />
+    <Content Include="img\icons\hair-clip.png" />
+    <Content Include="img\icons\menu.png" />
+    <Content Include="img\icons\razor-1.png" />
+    <Content Include="img\icons\scissors.png" />
+    <Content Include="img\info-bg-01.jpg" />
+    <Content Include="img\info-panel-bg.jpg" />
+    <Content Include="img\intro-bg-01-bk.jpg" />
+    <Content Include="img\intro-bg-01.jpg" />
+    <Content Include="img\intro-bg-02.jpg" />
+    <Content Include="img\intro-bg-03.jpg" />
+    <Content Include="img\intro-bg.jpg" />
+    <Content Include="img\sec-bg-01.jpg" />
+    <Content Include="img\sec-bg-02.jpg" />
+    <Content Include="img\sec-bg-03.jpg" />
+    <Content Include="img\sec-bg-04.jpg" />
+    <Content Include="img\t-member-01.jpg" />
+    <Content Include="img\t-member-02.jpg" />
+    <Content Include="img\t-member-03.jpg" />
+    <Content Include="img\t-member-04.jpg" />
+    <Content Include="img\t-member-05.jpg" />
+    <Content Include="img\t-member-06.jpg" />
+    <Content Include="img\t-member-07.jpg" />
+    <Content Include="img\t-member-08.jpg" />
+    <Content Include="img\trailer.jpg" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\core.js" />
+    <Content Include="js\gmap-custom.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -141,6 +204,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\provincias.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -164,6 +228,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -215,10 +280,16 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Views\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
