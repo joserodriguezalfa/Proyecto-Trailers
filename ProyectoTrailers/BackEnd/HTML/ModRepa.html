@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
+<html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -16,12 +16,12 @@
         }
 
         body {
-            font-family: "Poppins", sans-serif;
+            font-family: 'Times New Roman', sans-serif;
             height: 100vh;
-            background-image: url('Images/oficial.jpeg');
+            background-image: url('../Imagenes/oficial.jpeg');
             background-repeat: no-repeat;
-            font-weight: 500;
-            background-position: top;
+            font-weight: 100;
+            background-position: bottom;
             background-color: #0d0d0d;
         }
 
@@ -304,40 +304,33 @@
             width: 60%;
         }
     </style>
+
 </head>
-
 <body>
+
+
+
     <form id="form1" runat="server">
-        <div>
-        </div>
+
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
+                <!-- Icon -->
+                <br />
+
+                <div class="fadeIn first">
+
+                    <img src="../Imagenes/login.png" style="width:50px; height:50px;" />
+                </div>
+                <br />
+                <label for="fname">Código de reparación:</label><br>
+                <input type="text" id="placa" name="placa" value=""><br><br>
+
+
+                <input type="submit" value="BUSCAR REAPARACIÓN"> <br />
+                <a href="Dashboard1.html" class="btn btn-success">VOLVER</a>
     </form>
-
-
-    <div class="wrapper fadeInDown">
-        <div id="formContent">
-            <!-- Tabs Titles -->
-            <!-- Icon -->
-            <br />
-            <br />
-            <div class="fadeIn first">
-
-                <img src="../Imagenes/login.png" style="width:50px; height:50px;" />
-            </div>
-
-            <!-- Login Form -->
-            <form>
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nombre de Usuario">
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nombre">
-                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
-                <input type="submit" class="fadeIn fourth" value="Registrarme">
-            </form>
-
-            <!-- Remind Passowrd -->
-            <div id="formFooter">
-
-            </div>
-
-        </div>
-    </div>
 </body>
+
+
 </html>

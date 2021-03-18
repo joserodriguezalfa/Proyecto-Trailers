@@ -116,7 +116,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto text-sm-center text-md-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home">Trailers <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Empleados</a>
@@ -131,8 +131,9 @@
                         <a class="nav-link" href="#testimonial">Viajes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
+                        <a class="nav-link" href="#contact">Reparaciones</a>
                     </li>
+
                 </ul>
             </div>
             <ul class="navbar-nav ml-auto search-box">
@@ -147,15 +148,27 @@
     <section id="home" class="intro intro-bg bg-overlay parallax">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 caption-two-panel ml-auto pt-5">
-                    <div class="intro-caption mt-5">
-                        <img src="../Imagenes/oficial.jpeg" width="500px"/>
-                        <h1 class="text-white mb-2">Trailers Zumbado</h1>
-                        <p class="text-white mb-4"> Bienvenido al dashboard.</p>
-                       
+                <div class="col-md-8">
+                    <div class="head-box">
+                        <div class="col-lg-6 col-md-12 caption-two-panel ml-auto pt-5">
+                            <div class="intro-caption mt-5">
+                                <img src="../Imagenes/oficial.jpeg" width="500px" />
+                                <h1 class="text-white mb-2">Trailers Zumbado</h1>
+
+                                <div class="three-panel-block mt-5">
+                                    <div class="form1">
+
+                                    </div>
+                                    <a href="Form_Trailer.html" class="btn btn-primary btn-capsul px-4">INGRESAR TRAILER</a>
+                                    <a href="ModTrailer.html" class="btn btn-primary btn-capsul px-4">MODIFICAR TRAILER</a>
+                                    <a href="ReporteTrailer.html" class="btn btn-primary btn-capsul px-4">CREAR REPORTE</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Info block 1 -->
@@ -164,16 +177,16 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="head-box">
-                        <h2 class="font-abril ">Empleados</h2>
+                        <h2 class="font-abril ">EMPLEADOS</h2>
                     </div>
                     <div class="three-panel-block mt-5">
                         <div class="form1">
-                            
+
                         </div>
-                        <a href="Form_Emple.html" class="btn btn-primary btn-capsul px-4">CREAR EMPLEADO</a>
-                        <a href="Form_Emple.html" class="btn btn-primary btn-capsul px-4">MODIFICAR EMPLEADO</a>
+                        <a href="Form_Emple.html" class="btn btn-primary btn-capsul px-4">INGRESAR EMPLEADO</a>
+                        <a href="ModEmpleado.html" class="btn btn-primary btn-capsul px-4">MODIFICAR EMPLEADO</a>
                         <a href="Reportes.html" class="btn btn-primary btn-capsul px-4">CREAR REPORTE</a>
-                        
+
 
                     </div>
                 </div>
@@ -187,16 +200,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="head-box"><br />
+                    <div class="head-box">
+                        <br />
                         <h2 class="font-abril ">RUTAS</h2>
                     </div>
                     <div class="three-panel-block mt-5">
                         <div class="form1">
 
                         </div>
-                        <a href="Form_Emple.html" class="btn btn-primary btn-capsul px-4">CREAR RUTAS</a>
-                        <a href="Form_Emple.html" class="btn btn-primary btn-capsul px-4">MODIFICAR RUTAS</a>
-                        <a href="Reportes.html" class="btn btn-primary btn-capsul px-4">CREAR REPORTE</a>
+                        <a href="Form_Rutas.html" class="btn btn-primary btn-capsul px-4">INGRESAR RUTA</a>
+                        <a href="ModRutas.html" class="btn btn-primary btn-capsul px-4">MODIFICAR RUTA</a>
+                        <a href="ReporteRutas.html" class="btn btn-primary btn-capsul px-4">CREAR REPORTE</a>
 
 
                     </div>
@@ -217,7 +231,7 @@
                         <div class=" text-center p-3">
                             <div class="price-count font-abril"><span></span></div>
                             <h3>RUTAS</h3>
-                  
+
                             <div id="piechart" style="width: 470px; height: 400px;"></div>
                         </div>
                     </div>
@@ -238,7 +252,7 @@
                             <p class="px-4"></p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -249,47 +263,24 @@
     <section id="testimonial" class="testimonial-section sec-bg-04 py-5 h-100">
         <div class="container">
             <div class="row">
-                <div class="head-box text-center mb-3 col-md-12 mt-5">
+                <div class="head-box text-left mb-3 col-md-12 mt-5">
                     <h2 class="font-abril">VIAJES</h2>
                 </div>
             </div>
             <div class="single-testimonial">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner pt-5" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="testimonial-box text-center">
-                                <div class="testimonial-content w-100 bg-faded">
-                                    <p class="mb-0"><i class="fa fa-quote-left fa-3x" aria-hidden="true"></i></p>
-                                    <p class="lead font-abril">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <div class="testimonial-footer">
-                                        <h4 class="mt-2 mb-0 text-primary">Gerald Montgomery</h4>
-                                        <p>-United States</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonial-box text-center">
-                                <div class="testimonial-content w-100 bg-faded">
-                                    <p class="mb-0"><i class="fa fa-quote-left fa-3x" aria-hidden="true"></i></p>
-                                    <p class="lead font-abril">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet.</p>
-                                    <div class="testimonial-footer">
-                                        <h4 class="mt-2 mb-0 text-primary">Harper Robertson</h4>
-                                        <p>-United States</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-md-8">
+                    <div class="head-box">
+
                     </div>
-                    <div class="navigator-box">
-                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                            <span class="fa fa-angle-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                            <span class="fa fa-angle-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                    <div class="three-panel-blockk mt-5">
+                        <div class="form1">
+
+                        </div>
+                        <a href="Form_Viajes.html" class="btn btn-primary btn-capsul px-4">INGRESAR VIAJE</a>
+                        <a href="ModViaje.html" class="btn btn-primary btn-capsul px-4">MODIFICAR VIAJE</a>
+                        <a href="ReporteViajes.html" class="btn btn-primary btn-capsul px-4">CREAR REPORTE</a>
+
+
                     </div>
                 </div>
             </div>
@@ -297,53 +288,26 @@
     </section>
 
     <!-- Contact Block -->
-    <section id="contact" class="contact-section h-100 bg-dark">
-        <div id="map" class="bg-overlay"></div>
-        <div class="container py-5">
-            <div class="col-lg-8 col-md-6 col-sm-10 form-sec bg-white my-5 p-5 mx-auto">
-                <form>
-                    <h2 class="mb-4">Contact Us!</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="sr-only" for="formGroupExampleInput">Full Name</label>
-                                <input class="form-control" id="formGroupExampleInput" placeholder="Full Name" onfocus="this.placeholder=''" onblur="this.placeholder='Full Name'" type="text">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="sr-only" for="formGroupExampleInput2">Phone Number</label>
-                                <input class="form-control" id="formGroupExampleInput2" placeholder="Phone Number" onfocus="this.placeholder=''" onblur="this.placeholder='Phone Number'" type="text">
-                            </div>
-                        </div>
+    <section id="services" class="info-section text-white bg-right bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="head-box">
+                        <h2 class="font-abril ">REPARACIONES</h2>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="sr-only" for="formGroupExampleInput2">Email Address</label>
-                                <input class="form-control" id="formGroupExampleInput2" placeholder="Email Address" onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'" type="email">
-                            </div>
+                    <div class="three-panel-block mt-5">
+                        <div class="form1">
+
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="sr-only" for="formGroupExampleInput2">Address</label>
-                                <input class="form-control" id="formGroupExampleInput2" placeholder="Enter Address" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Address'" type="email">
-                            </div>
-                        </div>
+                        <a href="Form_Repa.html" class="btn btn-primary btn-capsul px-4">INGRESAR REPARACIÓN</a>
+                        <a href="ModRepa.html" class="btn btn-primary btn-capsul px-4">MODIFICAR REPARACIÓN</a>
+                        <a href="ReporteRepa.html" class="btn btn-primary btn-capsul px-4">CREAR REPORTE</a>
+
+
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="sr-only" for="formGroupExampleInput2">Message</label>
-                                <textarea class="form-control" placeholder="Enter your message here!" rows="4" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your message here!'"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-primary btn-capsul px-4">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
+
         </div>
     </section>
 

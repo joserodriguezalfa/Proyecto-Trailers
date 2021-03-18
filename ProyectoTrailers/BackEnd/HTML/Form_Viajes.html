@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
+<html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -16,12 +16,12 @@
         }
 
         body {
-            font-family: "Poppins", sans-serif;
-            height: 100vh;
-            background-image: url('Images/oficial.jpeg');
+            font-family: 'Times New Roman', sans-serif;
+            height: 200vh;
+            background-image: url('../Imagenes/oficial.jpeg');
             background-repeat: no-repeat;
-            font-weight: 500;
-            background-position: top;
+            font-weight: 100;
+            background-position: top left;
             background-color: #0d0d0d;
         }
 
@@ -304,40 +304,108 @@
             width: 60%;
         }
     </style>
+
 </head>
-
 <body>
+
+
+
     <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
 
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
+                <!-- Icon -->
+                <br />
 
-    <div class="wrapper fadeInDown">
-        <div id="formContent">
-            <!-- Tabs Titles -->
-            <!-- Icon -->
-            <br />
-            <br />
-            <div class="fadeIn first">
+                <div class="fadeIn first">
 
-                <img src="../Imagenes/login.png" style="width:50px; height:50px;" />
-            </div>
+                    <img src="../Imagenes/login.png" style="width:50px; height:50px;" />
+                </div><br />
 
-            <!-- Login Form -->
-            <form>
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nombre de Usuario">
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nombre">
-                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
-                <input type="submit" class="fadeIn fourth" value="Registrarme">
-            </form>
-
-            <!-- Remind Passowrd -->
-            <div id="formFooter">
-
-            </div>
-
-        </div>
-    </div>
+                <label for="fname">Código de viaje:</label><br>
+                <input type="text" id="Cod" name="Cod" value=""><br>
+                <label for="lname">Ruta:</label><br>
+                <input type="text" id="Ruta" name="Ruta" value=""><br>
+                <label for="fname">Placa de tráiler:</label><br>
+                <input type="text" id="Placa" name="Placa" value=""><br>
+                <label for="fname">
+                    Hora de salida: <select name="salida" id="salida">
+                        <option value="hora">00:00</option>
+                        <option value="hora">01:00</option>
+                        <option value="hora">02:00</option>
+                        <option value="hora">03:00</option>
+                        <option value="hora">04:00</option>
+                        <option value="hora">05:00</option>
+                        <option value="hora">06:00</option>
+                        <option value="hora">07:00</option>
+                        <option value="hora">08:00</option>
+                        <option value="hora">09:00</option>
+                        <option value="hora">10:00</option>
+                        <option value="hora">11:00</option>
+                        <option value="hora">12:00</option>
+                        <option value="hora">13:00</option>
+                        <option value="hora">14:00</option>
+                        <option value="hora">15:00</option>
+                        <option value="hora">16:00</option>
+                        <option value="hora">17:00</option>
+                        <option value="hora">18:00</option>
+                        <option value="hora">19:00</option>
+                        <option value="hora">20:00</option>
+                        <option value="hora">21:00</option>
+                        <option value="hora">22:00</option>
+                        <option value="hora">23:00</option>
+                        <option value="hora">24:00</option>
+                    </select>
+                </label><br>
+                <label for="fname">
+                    Hora de llegada: <select name="llegada" id="llegada">
+                        <option value="hora">00:00</option>
+                        <option value="hora">01:00</option>
+                        <option value="hora">02:00</option>
+                        <option value="hora">03:00</option>
+                        <option value="hora">04:00</option>
+                        <option value="hora">05:00</option>
+                        <option value="hora">06:00</option>
+                        <option value="hora">07:00</option>
+                        <option value="hora">08:00</option>
+                        <option value="hora">09:00</option>
+                        <option value="hora">10:00</option>
+                        <option value="hora">11:00</option>
+                        <option value="hora">12:00</option>
+                        <option value="hora">13:00</option>
+                        <option value="hora">14:00</option>
+                        <option value="hora">15:00</option>
+                        <option value="hora">16:00</option>
+                        <option value="hora">17:00</option>
+                        <option value="hora">18:00</option>
+                        <option value="hora">19:00</option>
+                        <option value="hora">20:00</option>
+                        <option value="hora">21:00</option>
+                        <option value="hora">22:00</option>
+                        <option value="hora">23:00</option>
+                        <option value="hora">24:00</option>
+                    </select><br />
+                </label><br><br />
+                <label for="fname">Tiempo de descarga:</label><br>
+                <input type="text" id="desca" name="desca" value=""><br>
+                <label for="lname">Peajes:</label><br>
+                <input type="text" id="peaje" name="peaje" value=""><br>
+                <label for="fname"> Diesel: </label><br>
+                <input type="text" id="diesel" name="diesel" value=""> <br>
+                <label for="fname"> Ganancia bruta: </label><br>
+                <input type="text" id="gana" name="gana" value=""> <br>
+                <label for="fname"> Empleado: </label><br>
+                <input type="text" id="Emplea" name="Emplea" value=""> <br>
+                <label for="fname"> Descripción de viaje: </label><br>
+                <input type="text" id="desc" name="desc" value=""> <br>
+                <label for="fname"> Descripción de carga: </label><br>
+                <input type="text" id="desc" name="desc" value=""> <br>
+                <label for="fname"> Ganancia Neta: </label><br>
+                <input type="text" id="gana" name="gana" value=""> <br>
+                <input type="submit" value="GUARDAR">
+</form>
 </body>
+
+
 </html>

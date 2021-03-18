@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
+<html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -16,12 +16,12 @@
         }
 
         body {
-            font-family: "Poppins", sans-serif;
-            height: 100vh;
-            background-image: url('Images/oficial.jpeg');
+            font-family: 'Times New Roman', sans-serif;
+            height: 200vh;
+            background-image: url('../Imagenes/oficial.jpeg');
             background-repeat: no-repeat;
-            font-weight: 500;
-            background-position: top;
+            font-weight: 100;
+            background-position: top left;
             background-color: #0d0d0d;
         }
 
@@ -304,40 +304,47 @@
             width: 60%;
         }
     </style>
+
 </head>
-
 <body>
+
+
+
     <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
 
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
+                <!-- Icon -->
+                <br />
 
-    <div class="wrapper fadeInDown">
-        <div id="formContent">
-            <!-- Tabs Titles -->
-            <!-- Icon -->
-            <br />
-            <br />
-            <div class="fadeIn first">
+                <div class="fadeIn first">
 
-                <img src="../Imagenes/login.png" style="width:50px; height:50px;" />
-            </div>
-
-            <!-- Login Form -->
-            <form>
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nombre de Usuario">
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nombre">
-                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
-                <input type="submit" class="fadeIn fourth" value="Registrarme">
-            </form>
-
-            <!-- Remind Passowrd -->
-            <div id="formFooter">
-
-            </div>
-
-        </div>
-    </div>
+                    <img src="../Imagenes/login.png" style="width:50px; height:50px;" />
+                </div>
+                <br />
+                <label for="fname">Placa de tráiler:</label><br>
+                <input type="text" id="placa" name="placa" value=""><br>
+                <label for="lname">Tarjeta de Pesos y Dimensiones:</label><br>
+                <input type="text" id="tar" name="tar" value=""><br>
+                <label for="fname">Riteve:</label><br>
+                <input type="text" id="rit" name="rit" value=""><br>
+                <label for="fname">Marchamo:</label><br>
+                <div class="customer">
+                    <br />
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        <input type="date" class="form-control" placeholder="Date" />
+                    </div>
+                </div><br />
+                <label for="fname">Tarjeta de transporte peligroso:</label><br>
+                <input type="text" id="tarj" name="tarj" value=""><br>
+                <label for="lname">Código de transportista:</label><br>
+                <input type="text" id="Cod" name="Cod" value=""><br>
+                   
+                <input type="submit" value="GUARDAR">
+</form>
 </body>
+
+
 </html>
